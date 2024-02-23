@@ -9,6 +9,7 @@ module.exports = {
         extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
         alias: {
           'moti/skeleton': 'moti/skeleton/react-native-linear-gradient',
+          '@assets': './src/assets',
           '@components': './src/components',
           '@pages': './src/pages',
           '@router': './src/router',
