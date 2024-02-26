@@ -7,8 +7,8 @@ const RootStack = createNativeStackNavigator<RootStackNavigatorProps>()
 
 const Router = () => {
   return (
-    <NavigationContainer children>
-      <RootStack.Navigator initialRouteName='Home' children>
+    <NavigationContainer>
+      <RootStack.Navigator initialRouteName='Home'>
         <RootStack.Screen
           name='Home'
           component={HomePage}
