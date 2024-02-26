@@ -3,7 +3,7 @@ import { SafeAreaView, Text, View, useWindowDimensions } from 'react-native'
 import WebView from 'react-native-webview'
 import { FabButton, SkeletonRender } from 'components'
 import LinearGradient from 'react-native-linear-gradient'
-import { ImgBriSabrina } from 'assets'
+import { ImgBriBrigita } from 'assets'
 import { versionMobile } from 'utils'
 
 const HomePage = () => {
@@ -31,15 +31,15 @@ const HomePage = () => {
         {isShowChatbot ? (
           <WebView
             source={{
-              html: '<iframe src="https://www.chatbase.co/chatbot-iframe/4yFX17vTp1tXfQmCluoGa" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;right:0px;bottom:0px" height="100%" width="100%""> </iframe>',
+              html: '<iframe src="https://www.chatbase.co/chatbot-iframe/O-ODVXaVfBLymJgQk_V4e" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;right:0px;bottom:0px" height="100%" width="100%""> </iframe>',
             }}
             style={{ flex: 1, height, width, margin: 0 }}
             scalesPageToFit={false}
           />
         ) : (
-          <ImgBriSabrina
-            height={height * (240 / 801)}
-            width={width * (240 / 361)}
+          <ImgBriBrigita
+            height={height * (260 / 801)}
+            width={width * (250 / 361)}
             style={{ marginBottom: height * (15 / 801) }}
           />
         )}
