@@ -7,7 +7,7 @@ const FabButton = (props: { onPress?: () => void; isPress?: boolean }) => (
     style={[styles(props.isPress).fabButton, styles(props.isPress).shadow]}
   >
     {props.isPress ? (
-      <IcX height={19} width={19} fill='#FFFFFF' />
+      <IcX height={17} width={17} fill='#FFFFFF' />
     ) : (
       <IcChat height={30} width={30} fill='#FFFFFF' />
     )}
@@ -17,22 +17,22 @@ const FabButton = (props: { onPress?: () => void; isPress?: boolean }) => (
 const styles = (isPress?: boolean) =>
   StyleSheet.create({
     fabButton: {
-      width: isPress ? 30 : 60,
-      height: isPress ? 30 : 60,
+      width: isPress ? 26 : 60,
+      height: isPress ? 26 : 60,
       justifyContent: 'center',
       alignItems: 'center',
       borderRadius: 100,
-      backgroundColor: '#65d5eb',
+      backgroundColor: '#6ed8ed',
     },
     shadow: {
-      shadowColor: '#FFFFFF',
+      shadowColor: '#000000',
       shadowOffset: {
-        width: 0,
+        width: 2,
         height: 2,
       },
       shadowOpacity: 0.25,
       shadowRadius: 3.84,
-      elevation: 5,
+      elevation: 8,
     },
     text: {
       fontSize: 23,

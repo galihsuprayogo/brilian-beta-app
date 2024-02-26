@@ -17,7 +17,7 @@ const SkeletonRender = () => {
     >
       <Skeleton colors={colors} radius='round' height={65} width={65} />
       <Spacer height={16} />
-      <Skeleton colors={colors} width='80%' />
+      <Skeleton colors={colors} height={50} width='80%' />
 
       <View
         style={{
@@ -30,18 +30,18 @@ const SkeletonRender = () => {
       >
         <Skeleton colors={colors} radius='round' height={50} width={50} />
         <Spacer height={10} />
-        <Skeleton colors={colors} width='95%' />
+        <Skeleton colors={colors} height={40} width='95%' />
         <Spacer height={10} />
-        <Skeleton colors={colors} width='85%' />
+        <Skeleton colors={colors} height={40} width='85%' />
       </View>
       <Spacer height={30} />
       <Skeleton colors={colors} radius='round' height={65} width={65} />
       <Spacer height={16} />
-      <Skeleton colors={colors} width='90%' />
+      <Skeleton colors={colors} height={40} width='90%' />
       <Spacer height={16} />
-      <Skeleton colors={colors} width='100%' />
+      <Skeleton colors={colors} height={60} width='100%' />
       <Spacer height={70} />
-      <Skeleton colors={colors} width='100%' />
+      <Skeleton colors={colors} width='100%' height={40} />
     </MotiView>
   )
 }
